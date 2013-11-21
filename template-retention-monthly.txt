@@ -1,12 +1,12 @@
 
 Mollom Monthly Update: we blocked $spam_auto spam posts for you this month;
 
-<p> Hello $sub_name, </p>
-<p>   
+<p> 
+  Hello $sub_name, <br><br>
   Welcome!  This month's Mollom update contains the latest stats and information about how Mollom 
   is protecting your sites and safeguarding your business. Over the last month, 
   <font color='green'><b>Mollom</b></font> protected $site_count sites for you.
-  <br>
+  <br><br>
   Here are this month's key stats across all sites that Mollom is protecting for you:
   <ul>
     <li> <b> $spam_auto </b> spam posts were blocked automatically.  
@@ -47,4 +47,10 @@ Mollom Monthly Update: we blocked $spam_auto spam posts for you this month;
   Thanks for using Mollom,<br>
     The Mollom Team <br><br>
   * Assumes 10 seconds per moderated post
+</p>;
+
+<p>
+  <a href="*|UNSUB:http://mollom.com|*">
+    Click here to unsubscribe from the mailing list
+  </a>
 </p>;
