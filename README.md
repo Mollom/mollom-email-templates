@@ -1,4 +1,4 @@
 mollom-email-templates
 ======================
 
-The Template Folder for mollom emails using php
+The Template Folder for Mollom emails. Edit this template and send emails. It's that easy
