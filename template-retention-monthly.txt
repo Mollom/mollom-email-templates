@@ -50,6 +50,6 @@ Mollom Monthly Update: we blocked $spam_auto spam posts for you this month;
 
 <p>
   <a href="*|UNSUB:http://mollom.com|*">
-    Click here to test unsubscribe from the mailing list
+    Click here to unsubscribe from the mailing list
   </a>
 </p>;
