@@ -22,7 +22,10 @@ Mollom Monthly Update: we blocked $spam_auto spam posts for you this month;
   <ul>
     <li> Day with most Spam Posts: [$day_year_date_spam - $spammiest_day_count spam posts] </li>
     <li> Day with most Legitimate Posts: [$day_year_date_ham - $hammiest_day_count ham posts] </li>
-  </ul>     
+  </ul>
+  <br>
+  Below is the chart : <br><br>
+  <img src="https://chart.googleapis.com/chart?chs=250x100&amp;chd=t:60,40&amp;cht=p3&amp;chl=Hello|World">
 </p>;
   
 <p>Here's your per-site breakdown:</p>
