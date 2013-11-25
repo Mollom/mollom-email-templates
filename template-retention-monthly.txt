@@ -1,4 +1,4 @@
-Mollom Monthly Update: we blocked $spam_auto spam posts for you this month;
+Mollom Monthly Update: we blocked $spam_auto spam posts for you this month**
 
 <p> 
   Hello $sub_name, <br><br>
@@ -26,7 +26,7 @@ Mollom Monthly Update: we blocked $spam_auto spam posts for you this month;
   <br>
   Below is the chart : <br><br>
   <img src="https://chart.googleapis.com/chart?chs=250x100&amp;chd=t:60,40&amp;cht=p3&amp;chl=Hello|World">
-</p>;
+</p>**
   
 <p>Here's your per-site breakdown:</p>
 <table border='1'>
@@ -35,7 +35,7 @@ Mollom Monthly Update: we blocked $spam_auto spam posts for you this month;
   <th> <b>Legitimate Posts</b> </th>
   <th> <b>Spam</b> </th>
   <th> <b>Spam %</b> </th>
-</tr>;
+</tr>**
     
 <p>Did you know ? <br> 
   You could be saving even more time by using Mollom's <b> Content Moderation Platform (CMP)? </b>   
@@ -43,16 +43,16 @@ Mollom Monthly Update: we blocked $spam_auto spam posts for you this month;
   so you can quickly approve or flag them as spam and move on to other things. It's included as part of your
   Mollom subscription, and hey, who doesn't want some extra time back in their day! Check out all the time-saving tools 
   in the CMP at my.mollom.com.
-</p>;
+</p>**
 
 <p>
   Thanks for using Mollom,<br>
     The Mollom Team <br><br>
   * Assumes 10 seconds per moderated post
-</p>;
+</p>**
 
 <p>
   <a href="*|UNSUB:http://mollom.com|*">
     Click here to unsubscribe from the mailing list
   </a>
-</p>;
+</p>**
