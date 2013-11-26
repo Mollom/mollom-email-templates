@@ -25,7 +25,7 @@ Mollom Monthly Update: we blocked $spam_auto spam posts for you this month**
   </ul>
   <br>
   Below is the chart : <br><br>
-  <img src="https://chart.googleapis.com/chart?chs=250x100&amp;chd=t:60,40&amp;cht=p3&amp;chl=Hello|World">
+  <img src="https://chart.googleapis.com/chart?chco=00FF00&amp;chbh=16,2&amp;chs=650x460&amp;cht=bvs&amp;chd=t:200,1000,486,2388,343,600,4000,100,123,23,323,455,122,677,12,212,4435,208,0,3434,7872,2396,2325,323,54,877,988,1012,233,5186,2355,8462&amp;chds=a&amp;chxt=x,y">
 </p>**
   
 <p>Here's your per-site breakdown:</p>
