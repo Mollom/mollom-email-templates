@@ -1,4 +1,13 @@
-Mollom Monthly Update: we blocked {{spam_auto spam}} posts for you this month;
+{# The line below is the subject. Semi-colon at the end of the line marks the end of the subject.
+   Anything which comes after the semi-colon is the email-message.
+   Note: 
+   1. Please donot modify anything inside the blocks that start with {% and end with %}.
+      Blocks like these can be moved around as a whole unit.
+   2. The words like {{ word }} are variables and they can be moved around pretty much anywhere inside
+      template. Only the variables found insdie the template can be used inside the template. No new
+      variable can be introduced.    
+#}
+Mollom Monthly Update: we blocked {{spam_auto}} posts for you this month;
 
 <html>
   <body>
@@ -25,6 +34,25 @@ Mollom Monthly Update: we blocked {{spam_auto spam}} posts for you this month;
         <li> Day with most Spam Posts: [{{day_year_date_spam}} - {{spammiest_day_count}} spam posts] </li>
         <li> Day with most Legitimate Posts: [{{day_year_date_ham}} - {{hammiest_day_count}} ham posts] </li>
       </ul>     
+    </p>
+    <p>Here's your per-site breakdown:</p>
+    <p>
+      <table border='1'>
+        <tr>
+          <th> <b>Site</b> </th>
+          <th> <b>Legitimate Posts</b> </th>
+          <th> <b>Spam</b> </th>
+          <th> <b>Spam %</b> </th>
+        </tr>
+        {% for site_stats in all_site_stats %}
+          <tr>
+            <td> {{site_stats['url']}} </td> 
+            <td> {{site_stats['legit_posts']}} </td> 
+            <td> {{site_stats['spam_total']}} </td>
+            <td> {{site_stats['spam_percent']}} </td>
+          </tr>
+        {% endfor %}
+      </table>
     </p>
     <p>Did you know ? <br> 
       You could be saving even more time by using Mollom's <b> Content Moderation Platform (CMP)? </b>   
