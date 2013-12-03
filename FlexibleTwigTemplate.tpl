@@ -1,13 +1,18 @@
-{# The line below is the subject. Semi-colon at the end of the line marks the end of the subject.
-   Anything which comes after the semi-colon is the email-message.
+{# 
    Note: 
-   1. Please donot modify anything inside the blocks that start with {% and end with %}.
-      Blocks like these can be moved around as a whole unit.
-   2. The words like {{ word }} are variables and they can be moved around pretty much anywhere inside
-      template. Only the variables found insdie the template can be used inside the template. No new
-      variable can be introduced.    
+   1. Anything enclosed within {# <enclosed-content-here> #} is a comment. And is ignored from the template and 
+      hence the email that would be sent. 
+   2. Please donot modify anything inside the blocks that start with {% and end with %}. But the blocks can be
+      moved around as a whole.
+   2. The words that look like {{word}} are variables (they are placeholders for the actual values) and these can 
+      be moved around, pretty much anywhere inside template. Only the variables found inside the template can be 
+      used in the template. No new variables can be introduced.   
+      
+   The line below this comment is the subject line of the email. Semi-colon at the end of the line marks 
+   the end of the subject. Anything which comes after the semi-colon is the email-message.
+   
 #}
-Mollom Monthly Update: we blocked {{spam_auto}} posts for you this month;
+Mollom Monthly Update: we blocked {{spam_auto}} posts for you this month ; 
 
 <html>
   <body>
@@ -44,6 +49,12 @@ Mollom Monthly Update: we blocked {{spam_auto}} posts for you this month;
           <th> <b>Spam</b> </th>
           <th> <b>Spam %</b> </th>
         </tr>
+        {# 
+         The line below the comment is the template's tag-line. All tag lines start with {% 
+         and end with  %}, but the tag-block that was started off with the line would still be active.
+         The tag block ends with the tag line that looks like {% end-tagname %} . HTML with placeholder can
+         go inside the tag block (between the tag-lines)
+        #}
         {% for site_stats in all_site_stats %}
           <tr>
             <td> {{site_stats['url']}} </td> 
