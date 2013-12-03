@@ -1,6 +1,6 @@
 {# 
    Note: 
-   1. Anything enclosed within {# <enclosed-content-here> #} is a comment. And is ignored from the template and 
+   1. Anything enclosed within { followed by # and # followed by } is a comment. And is ignored from the template and 
       hence the email that would be sent. 
    2. Please donot modify anything inside the blocks that start with {% and end with %}. But the blocks can be
       moved around as a whole.
