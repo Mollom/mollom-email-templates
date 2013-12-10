@@ -13,12 +13,12 @@
   Email-ids to use to send the test emails to. Emails wouldn't be sent to the actual email-ids if this line is used.
   All the emails would be directed to the specfied Ids. Remove this line to actually send the emails to actual email-ids.
 #}
-chandankmit@gmail.com
+chandankmit@gmail.com, kumar.chandan@acquia.com
 
 *^seperator^*
 
 {# specfied below is the subject of the email, terminated by the symbol *^seperator^*  #}
-Mollom Monthly Update: we blocked {{spam_auto}} posts for you this month
+Mollom Monthly Update: we blocked {{spam_auto}} posts for you this month 
 
 *^seperator^* 
 
@@ -33,11 +33,15 @@ Mollom Monthly Update: we blocked {{spam_auto}} posts for you this month
       <br><br>
       Here are this month's key stats across all sites that Mollom is protecting for you:
       <ul>
-        <li> <b> {{spam_auto}} </b> spam posts were blocked automatically.  
+        <li> 
+         <b> {{spam_auto}} </b> spam posts were blocked automatically.  
             Of all posts checked, <b> {{spam_percent}} % </b> were identified as spam. 
         </li>
-        <li> Mollom saved you <b> {{moderation_time}} </b> of manual moderation work. </li>
-        <li> <b> {{legit_posts}} </b> legitimate posts were made by users of your site 
+        <li> 
+         Mollom saved you <b> {{moderation_time}} </b> of manual moderation work. (Assumes 10 seconds per moderated post) 
+        </li>
+        <li> 
+         <b> {{legit_posts}} </b> legitimate posts were made by users of your site
             who didn't have to solve a CAPTCHA thanks to Mollom's Artificial Intelligence.
         </li>
       </ul>     
@@ -82,8 +86,7 @@ Mollom Monthly Update: we blocked {{spam_auto}} posts for you this month
     </p>
     <p>
       Thanks for using Mollom,<br>
-        The Mollom Team <br><br>
-      (Assumes 10 seconds per moderated post)
+        The Mollom Team
     </p>
     <p>
       <a href="*|UNSUB:http://mollom.com|*">
