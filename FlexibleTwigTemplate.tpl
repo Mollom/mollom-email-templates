@@ -8,15 +8,17 @@
 
 {#
   Specified below is the list of email-addresses to send the test-emails to.
-  Emails wouldn't be sent to actual Mollom-users if this line is present in the template, instead all the emails would be directed to these emailaddress. Remove this line to actually send the emails to actual users.
+  Emails wouldn't be sent to actual Mollom-users if this line is present in the template, instead all the emails would be directed to these emailaddress. 
+  Remove this line to actually send the emails to actual users.
+  Each email-address is comma separated from other emails, hence comma is the delimter here.  
 #}
 
-chandankmit@gmail.com
-*^seperator^*
+chandankmit@gmail.com,kumar.chandan@acquia.com
+*^separator^*
 
-{# specfied below is the subject of the email, terminated by the symbol *^seperator^*  #}
+{# specfied below is the subject of the email, terminated by the symbol *^separator^*  #}
 Mollom Monthly Update: we blocked {{spam_auto}} posts for you this month 
-*^seperator^* 
+*^separator^* 
 
 {# The Email message starts below this line. This section should always follow the subject of the email #}
 <html>
@@ -88,7 +90,7 @@ Mollom Monthly Update: we blocked {{spam_auto}} posts for you this month
   </body>
 </html>
 
-*^seperator^*
+*^separator^*
  
 {#below is the Text version of the email and should always follow the html version #}
 Hello {{sub_name}},
