@@ -17,7 +17,7 @@ chandankmit@gmail.com,kumar.chandan@acquia.com
 *^separator^*
 
 {# specfied below is the subject of the email, terminated by the symbol *^separator^*  #}
-Mollom saved you <b> {{moderation_time}} </b> of manual moderation work.
+Mollom Monthly Update: we blocked {{spam_auto}} posts for you this month 
 *^separator^* 
 
 {# The Email message starts below this line. This section should always follow the subject of the email #}
