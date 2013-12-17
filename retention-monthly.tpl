@@ -83,7 +83,7 @@ Mollom Monthly Update: we blocked {{spam_auto}} posts for you this month
         The Mollom Team
     </p>
     <p>
-      <a href="*|UNSUB:http://mollom.com|*"> {# This is code for Madrill. Please do not edit this #}
+      <a href="http://mollom.com/unsubscribe/performance/{{uid}}/{{auth_code}}"> {# This dynamic url can be used by the email recipient to unsubscribe from the emails #}
         Click here to unsubscribe from the mailing list {# This text can be edited #}
       </a>
     </p>
@@ -112,4 +112,4 @@ Thanks for using Mollom,
   The Mollom Team
 
 Please use the link below to unsubscribe:
-*|UNSUB:http://mollom.com|*
+http://mollom.com/unsubscribe/performance/{{uid}}/{{auth_code}}
