@@ -1,4 +1,4 @@
-about the templates
+About the templates
 ======================
 
 This is the Template Folder for Mollom emails. Edit/create the templates for Mollom Emails here.
