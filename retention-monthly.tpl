@@ -51,36 +51,43 @@ Mollom Monthly Update: blocked {{spam_auto}} posts for you this month
         <li> Day with most Legitimate Posts: [{{day_year_date_ham}} - {{hammiest_day_count}} leigitimate posts] </li>
       </ul>     
     </p>
-    <p>Here's your per-site breakdown:</p>
     <p>
-      <table border='1'>
-        <tr>
-          <th> <b> Site </b> </th>
-          <th> <b> Legitimate Posts </b> </th>
-          <th> <b> Total Spam </b> </th>
-          <th> <b> Spam % </b> </th>
-        </tr>
-        {# 
-         The line below this comment is a tag-line. All tag-lines start with {% 
-         and end with  %}, but the tag-block which starts with this line would still be active.
-         The tag-block ends with the tag-line that looks like {% end-tagname %} . 
-         HTML content with placeholders can go inside the tag block (between the start and end tag-lines)
-        #}
-        {% for site_stats in all_site_stats %}
-          <tr>
-            <td align='center'> {{ site_stats['url'] }} </td> 
-            <td align='center'> {{ site_stats['legit_posts']|number_format }} </td> 
-            <td align='center'> {{ site_stats['spam_total']|number_format }} </td>
-            <td align='center'> {{ site_stats['spam_percent']|number_format(2, '.', ',') }} </td>
-          </tr>
-        {% endfor %}
-      </table>
+      <p> Below is a graph showing the amount of Spam blocked by Mollom over the course of the month: </p>
+      <img src="{{graph_url_spam}}">
     </p>
+    
+    {% if all_site_stats|length > 3 %}
+      <p>Here's your per-site breakdown:</p>
+      <p>
+        <table border='1'>
+          <tr>
+            <th> <b> Site </b> </th>
+            <th> <b> Legitimate Posts </b> </th>
+            <th> <b> Total Spam </b> </th>
+            <th> <b> Spam % </b> </th>
+          </tr>
+          {# 
+           The line below this comment is a tag-line. All tag-lines start with {% 
+           and end with  %}, but the tag-block which starts with this line would still be active.
+           The tag-block ends with the tag-line that looks like {% end-tagname %} . 
+           HTML content with placeholders can go inside the tag block (between the start and end tag-lines)
+          #}
+          
+          {% for site_stats in all_site_stats %}
+            <tr>
+              <td align='center'> {{ site_stats['url'] }} </td> 
+              <td align='center'> {{ site_stats['legit_posts']|number_format }} </td> 
+              <td align='center'> {{ site_stats['spam_total']|number_format }} </td>
+              <td align='center'> {{ site_stats['spam_percent']|number_format(2, '.', ',') }} </td>
+            </tr>
+          {% endfor %}
+        </table>
+      </p>
+    {% endif %}
     <p>
-      Every day Mollom helps businesses protect over fifty thousand websites from harmful spam and unwanted 
-      content that can cause headaches and hurt business. We thank you for your business and look forward to providing you with continued support. <br> 
-      If you have any questions or are interested in additional product 
-      information please contact support@mollom.com .
+      Every day, Mollom protects web sites from millions of harmful and unwanted spam comments that can cause headaches and hurt business. 
+      We thank you for your business and look forward to providing you with continued support. <br> 
+      If you have any questions or are interested in additional product information please contact support@mollom.com .
     </p>
     <p>
       Thanks for using Mollom,<br>
@@ -117,8 +124,7 @@ Additional stats based on your site activity that may be meaningful for your bus
   - Day with most Spam Posts: [{{day_year_date_spam}} - {{spammiest_day_count}} spam posts] 
   - Day with most Legitimate Posts: [{{day_year_date_ham}} - {{hammiest_day_count}} ham posts]
         
-Every day Mollom helps businesses protect over fifty thousand websites from harmful spam and unwanted content that can cause headaches and hurt business. 
-We thank you for your business and look forward to providing you with continued support. 
+Every day, Mollom protects web sites from millions of harmful and unwanted spam comments that can cause headaches and hurt business.We thank you for your business and look forward to providing you with continued support. 
 If you have any questions or are interested in additional product information please contact support@mollom.com .
 
 Thanks for using Mollom,
