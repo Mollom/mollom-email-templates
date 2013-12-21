@@ -56,7 +56,7 @@ Mollom Monthly Update: blocked {{spam_auto}} posts for you this month
       <img src="{{graph_url_spam}}">
     </p>
     
-    {% if all_site_stats|length > 3 %}
+    {% if all_site_stats|length > 1 %}
       <p>Here's your per-site breakdown:</p>
       <p>
         <table border='1'>
